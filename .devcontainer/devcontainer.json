@@ -1,0 +1,24 @@
+{
+    "name": "Python Project",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": "..",
+        "args": { 
+            "VARIANT": "3.8",
+            "INSTALL_NODE": "false"
+        }
+    },
+    "runArgs": [
+        "--network",
+        "host"
+    ],
+    "settings": { 
+        "terminal.integrated.shell.linux": "/bin/bash",
+        "python.pythonPath": "/usr/local/bin/python",
+        "python.linting.enabled": true,
+        "python.linting.pylintEnabled": true
+    },
+    "extensions": [
+        "ms-python.python"
+    ]
+}
